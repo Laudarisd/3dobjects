@@ -1,0 +1,59 @@
+{
+  "name": "3d-design-store",
+  "version": "1.0.0",
+  "description": "A React-based 3D design store with SQLite3 and PayPal integration",
+  "private": true,
+  "dependencies": {
+    "@react-three/drei": "^9.96.0",
+    "@react-three/fiber": "^8.15.15",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.5.2",
+    "bcryptjs": "^2.4.3",
+    "framer-motion": "^10.16.16",
+    "gsap": "^3.12.2",
+    "lucide-react": "^0.303.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.8.1",
+    "react-scripts": "5.0.1",
+    "sql.js": "^1.8.0",
+    "three": "^0.160.0"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "crypto-browserify": "^3.12.1",
+    "gh-pages": "^6.1.1",
+    "path-browserify": "^1.0.1",
+    "stream-browserify": "^3.0.0",
+    "vm-browserify": "^1.1.2"
+  },
+  "homepage": "https://yourusername.github.io/3d-design-store"
+}

@@ -1,0 +1,65 @@
+/* App-specific styles */
+.app {
+  background: var(--bg-primary);
+  transition: background-color var(--transition-base);
+}
+
+.app.dark {
+  background: var(--dark-bg-primary);
+}
+
+.app.light {
+  background: var(--light-bg-primary);
+}
+
+/* Page transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Selection */
+::selection {
+  background: rgba(116, 97, 255, 0.2);
+  color: var(--text-color);
+}
+
+::-moz-selection {
+  background: rgba(116, 97, 255, 0.2);
+  color: var(--text-color);
+}

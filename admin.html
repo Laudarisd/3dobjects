@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - 3D Design Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>3D Store - Admin</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <button id="logoutBtn">Logout</button>
+                <button class="theme-toggle" id="themeToggle">🌓</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="admin-header">
+                <h1>Admin Panel</h1>
+                <p>Manage products, pricing, and download links</p>
+            </div>
+
+            <div class="admin-content">
+                <div class="admin-section">
+                    <div class="section-header">
+                        <h2>Product Management</h2>
+                        <button class="btn btn-primary" id="addProductBtn">Add New Product</button>
+                    </div>
+                    
+                    <div class="products-table-container">
+                        <table class="products-table" id="productsTable">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Image</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="productsTableBody">
+                                <!-- Products will be loaded dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Product Form Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Add Product</h3>
+                <span class="close" id="closeModal">&times;</span>
+            </div>
+            <form id="productForm">
+                <input type="hidden" id="productId">
+                <div class="form-group">
+                    <label for="productName">Product Name:</label>
+                    <input type="text" id="productName" required>
+                </div>
+                <div class="form-group">
+                    <label for="productDescription">Description:</label>
+                    <textarea id="productDescription" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">Price ($):</label>
+                    <input type="number" id="productPrice" step="0.01" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="productImage">Image URL:</label>
+                    <input type="url" id="productImage" required>
+                </div>
+                <div class="form-group">
+                    <label for="productZipPath">ZIP File Path:</label>
+                    <input type="text" id="productZipPath" placeholder="assets/products/1.zip" required>
+                </div>
+                <div class="form-group">
+                    <label for="productPaypalLink">PayPal Buy Now Link:</label>
+                    <textarea id="productPaypalLink" rows="3" placeholder="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YOUR_BUTTON_ID" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancelBtn">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 3D Design Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/database.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
