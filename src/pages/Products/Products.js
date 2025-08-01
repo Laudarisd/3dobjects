@@ -128,7 +128,7 @@ const Products = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
         >
           <h1>3D Model Collection</h1>
-          <p>Discover premium 3D models, CAD files, and digital assets for your projects</p>
+          <p>Discover premium 3D models, digital assets, and creative resources for your projects</p>
         </motion.div>
 
         {/* Filters and Search */}

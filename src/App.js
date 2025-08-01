@@ -12,6 +12,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import Admin from './pages/Admin/Admin';
 import Contact from './pages/Contact/Contact';
 import ThankYou from './pages/ThankYou/ThankYou';
+import AIChat from './pages/AIChat/AIChat';
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 import { useTheme } from './contexts/ThemeContext';
 import './styles/App.css';
@@ -161,6 +162,20 @@ function App() {
                 transition={pageTransition}
               >
                 <Contact />
+              </motion.div>
+            } 
+          />
+          <Route 
+            path="/chat" 
+            element={
+              <motion.div
+                initial="initial"
+                animate="in"
+                exit="out"
+                variants={pageVariants}
+                transition={pageTransition}
+              >
+                <AIChat />
               </motion.div>
             } 
           />

@@ -188,7 +188,7 @@ const Hero3D = () => {
           >
             Premium 3D Models
             <br />
-            <span className="gradient-text">& CAD Files</span>
+            <span className="gradient-text">& Digital Assets</span>
           </motion.h1>
           
           <motion.p
@@ -196,7 +196,7 @@ const Hero3D = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
           >
-            Discover high-quality 3D designs, Blender models, and CAD files 
+            Discover high-quality 3D designs, Blender models, and digital assets 
             for your creative projects. Professional-grade assets with instant download.
           </motion.p>
           

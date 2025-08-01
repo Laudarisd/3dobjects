@@ -24,7 +24,7 @@ export const DatabaseProvider = ({ children }) => {
         });
 
         // Check if database exists in localStorage
-        const savedDb = localStorage.getItem('3d-store-db');
+        const savedDb = localStorage.getItem('genmesh-studio-db');
         let database;
 
         if (savedDb) {
@@ -99,7 +99,7 @@ export const DatabaseProvider = ({ children }) => {
   const saveDatabase = (database) => {
     if (database) {
       const data = database.export();
-      localStorage.setItem('3d-store-db', JSON.stringify(Array.from(data)));
+      localStorage.setItem('genmesh-studio-db', JSON.stringify(Array.from(data)));
     }
   };
 

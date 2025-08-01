@@ -1,7 +1,7 @@
 {
-  "name": "3d-design-store",
+  "name": "genmesh-studio",
   "version": "1.0.0",
-  "description": "A React-based 3D design store with SQLite3 and PayPal integration",
+  "description": "A React-based GenMesh Studio with SQLite3 and PayPal integration for 3D models and digital assets",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.96.0",
@@ -17,7 +17,7 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.8.1",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "5.0.1",
     "sql.js": "^1.8.0",
     "three": "^0.160.0"
   },

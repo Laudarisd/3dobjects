@@ -38,12 +38,10 @@ const Footer = () => {
     >
       <div className="footer-container">
         <div className="footer-content">
-          <div className="footer-brand">
-            <h3>3D Store</h3>
-            <p>Premium 3D models and CAD files for your creative projects</p>
-          </div>
-          
-          <div className="footer-links">
+            <div className="footer-brand">
+              <h3>GenMesh Studio</h3>
+              <p>Premium 3D models and digital assets for your creative projects</p>
+            </div>          <div className="footer-links">
             <div className="footer-section">
               <h4>Quick Links</h4>
               <ul>
@@ -81,7 +79,7 @@ const Footer = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            &copy; {currentYear} 3D Design Store. All rights reserved.
+            &copy; {currentYear} GenMesh Studio. All rights reserved.
           </motion.p>
         </div>
       </div>

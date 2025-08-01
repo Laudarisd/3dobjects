@@ -1,6 +1,6 @@
-# 3D Design Store - React Development Documentation
+# GenMesh Studio - React Development Documentation
 
-A complete React-based e-commerce platform for selling 3D models and CAD files with modern animations, 3D effects, and secure PayPal integration.
+A complete React-based e-commerce platform for selling 3D models and digital assets with modern animations, 3D effects, and secure PayPal integration.
 
 ## 🚀 Quick Start
 
@@ -330,7 +330,7 @@ if (!gl) {
 **2. Database Errors:**
 ```javascript
 // Reset database
-localStorage.removeItem('3d-store-db');
+localStorage.removeItem('genmesh-studio-db');
 // Refresh page to reinitialize
 ```
 
@@ -594,4 +594,4 @@ Contexts:
 └── DatabaseContext.js → Used by all data operations
 ```
 
-This documentation provides everything needed to understand, modify, and deploy the 3D Design Store React application!
+This documentation provides everything needed to understand, modify, and deploy the GenMesh Studio React application!

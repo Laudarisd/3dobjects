@@ -1,7 +1,7 @@
 {
-  "short_name": "3D Store",
-  "name": "3D Design Store",
-  "description": "Premium 3D models and CAD files for creative professionals",
+  "short_name": "GenMesh Studio",
+  "name": "GenMesh Studio",
+  "description": "Premium 3D models and digital assets for creative professionals",
   "icons": [
     {
       "src": "favicon.ico",

@@ -1,6 +1,6 @@
-# 3D Design Store 🎨
+# GenMesh Studio 🎨
 
-A modern, React-based e-commerce platform for selling 3D models and CAD files with stunning 3D animations, secure PayPal integration, and no backend required - perfect for GitHub Pages hosting.
+A modern, React-based e-commerce platform for selling 3D models and digital assets with stunning 3D animations, secure PayPal integration, and no backend required - perfect for GitHub Pages hosting.
 
 ## ✨ Features
 

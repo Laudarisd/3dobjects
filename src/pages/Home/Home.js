@@ -58,7 +58,7 @@ const Home = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
           >
             <h2>Featured Products</h2>
-            <p>Discover our premium collection of 3D models and CAD files</p>
+            <p>Discover our premium collection of 3D models and digital assets</p>
           </motion.div>
           
           {loading ? (
